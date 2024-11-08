@@ -10,3 +10,11 @@ function gerarNumeros(quantd) {
     console.log('Números Repitidos: ' + i)
                         }
   
+/* function gerarNumeros(quantd) {
+    const numerosUnicos = new Set();
+    while ( numerosUnicos.size < quantd ) {
+        numerosUnicos.add(Math.floor(Math.random() * 60 + 1));}
+	console.log('Números Exclusivos: ' + Array.from(numerosUnicos))
+                        }
+  */
+
