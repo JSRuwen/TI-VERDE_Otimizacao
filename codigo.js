@@ -1,13 +1,13 @@
 function gerarNumeros(quantd) {
     var numerosUnicos = []
-    var i = 0
+    var numerosGerados = []
     while ( numerosUnicos.length < quantd ) {
-        var sorteio = Math.floor(Math.random()*60 + 1)
-        if (numerosUnicos.includes(sorteio)) {
-             i++; continue;} else {numerosUnicos.push(sorteio)}
+        numerosUnicos.push(Math.floor(Math.random()*60 + 1))
+	numerosGerados.push(numerosUnicos(numerosUnicos.length))
+        if (numerosUnicos.includes(numerosGerados)) {
+		continue} else {numerosUnicos.push(numerosUnicos)}
                             }
 	console.log('Números Exclusivos: ' + numerosUnicos)
-    console.log('Números Repitidos: ' + i)
                         }
   
 /* function gerarNumeros(quantd) {
@@ -16,5 +16,20 @@ function gerarNumeros(quantd) {
         numerosUnicos.add(Math.floor(Math.random() * 60 + 1));}
 	console.log('Números Exclusivos: ' + Array.from(numerosUnicos))
                         }
+.splice()
   */
+
+/* function gerarNumeros(quantd) {
+    var numerosUnicos = []
+    var numerosGerados = []
+    while(numerosUnicos.length < quantd) {
+        numerosUnicos.push(Math.floor(Math.random()*60 + 1));
+    	numerosGerados.push(numerosUnicos[numerosUnicos.length]);
+        if (numerosUnicos.includes(numerosGerados)) {
+		continue} 
+                            }
+	console.log(numerosUnicos)
+    console.log(numerosGerados)
+                        }
+*/
 
