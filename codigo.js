@@ -24,12 +24,13 @@ function gerarNumeros(quantd) {
     var numerosGerados = []
     while(numerosUnicos.length < quantd) {
         numerosUnicos.push(Math.floor(Math.random()*60 + 1));
-    	numerosGerados.push(numerosUnicos[numerosUnicos.length]);
+        numerosGerados.push(numerosUnicos[numerosUnicos.length])
         if (numerosUnicos.includes(numerosGerados)) {
-		continue} 
+		 numerosUnicos.pop(); return}
                             }
 	console.log(numerosUnicos)
     console.log(numerosGerados)
+                        }
                         }
 */
 
