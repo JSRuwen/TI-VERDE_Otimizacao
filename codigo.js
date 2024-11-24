@@ -20,17 +20,16 @@ function gerarNumeros(quantd) {
   */
 
 /* function gerarNumeros(quantd) {
-    var numerosUnicos = []
-    var numerosGerados = []
-    while(numerosUnicos.length < quantd) {
-        numerosUnicos.push(Math.floor(Math.random()*60 + 1));
-        numerosGerados.push(numerosUnicos[numerosUnicos.length])
-        if (numerosUnicos.includes(numerosGerados)) {
-		 numerosUnicos.pop(); return}
-                            }
-	console.log(numerosUnicos)
-    console.log(numerosGerados)
-                        }
-                        }
+	var numerosUnicos = []
+	var numerosGerados = []
+	while(numerosUnicos.length < quantd) {
+        	numerosGerados.push(Math.floor(Math.random()*60 + 1));
+        	if (!numerosUnicos.includes(numerosGerados[numerosGerados.length - 1]))  
+			{numerosUnicos.push(numerosGerados[numerosGerados.length - 1])}
+
+
+                            }        	console.log(numerosUnicos);
+}
+gerarNumeros(60)
 */
 
