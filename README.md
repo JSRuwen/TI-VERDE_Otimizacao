@@ -68,4 +68,5 @@ duplicados.
 
 Desempenho da function de acordo com códigos anteriores
 
-* 
+* Código do professor: 60% a mais de eficiência.
+* Primeiro Código: 49% a mais de eficiência.
